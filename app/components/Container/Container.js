@@ -5,7 +5,7 @@ import styles from './styles';
 
 
 const Container = ({children})=>(
-    <View style={styles.container}>
+    <View style={{paddingTop: 22}}>
         {children}
     </View>
 );
