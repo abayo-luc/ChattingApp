@@ -1,15 +1,16 @@
 import React, {Component} from 'react';
 import {View, Text, StatusBar} from 'react-native';
-import LoginContainer from '../components/LoginContainer/LoginContainer';
-
+import Container from '../components/Container/Container';
+import LoginTextInput from '../components/TextInput/LoginTextInput';
 
 class Login extends Component {
     render(){
         return(
-            <View>
+            <Container>
                 <StatusBar transucent={false} barStyle="light-content"/>
-                <LoginContainer/>
-            </View>
+                <LoginTextInput text="USANAME"/>
+                <LoginTextInput text="PASSWORD" secureTextEntry={true}/>
+            </Container>
         )
     }
 }
